@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "recsys"
+version = "0.1.0"
+description = ""
+authors = ["Sudhamshu Addanki <sudhamshuaddanki@gmail.com>"]
+readme = "README.md"
+packages = [{include = "recsys"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+numpy = "^2.2.2"
+jupyterlab = "^4.3.5"
+torch = "^2.6.0"
+scikit-learn = "^1.6.1"
+scipy = "^1.15.1"
+pydantic = "^2.10.6"
+pydantic-settings = "^2.7.1"
+matplotlib = "^3.10.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+black = "^23.0.0"
+isort = "^5.0.0"
+mypy = "^1.0.0"
+flake8 = "^6.0.0"
+jupyter = "^1.0.0"
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
